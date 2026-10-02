@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Record Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Record Manager</h1>
+        <p>Search, filter, sort and analyze student records</p>
+    </header>
+
+    <main>
+
+        <!-- Statistics -->
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Marks</h3>
+                <p id="averageMarks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Topper</h3>
+                <p id="topper">-</p>
+            </div>
+        </section>
+
+
+        <!-- Search and Filters -->
+        <section class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search student name..."
+            >
+
+            <select id="courseFilter">
+                <option value="all">All Courses</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+
+            <select id="marksFilter">
+                <option value="all">All Marks</option>
+                <option value="90">90 and above</option>
+                <option value="80">80 and above</option>
+                <option value="70">70 and above</option>
+            </select>
+
+            <select id="sortOption">
+                <option value="none">Sort By</option>
+                <option value="nameAsc">Name A-Z</option>
+                <option value="nameDesc">Name Z-A</option>
+                <option value="marksHigh">Marks High-Low</option>
+                <option value="marksLow">Marks Low-High</option>
+            </select>
+
+        </section>
+
+
+        <!-- Student Records -->
+        <section>
+            <h2>Student Records</h2>
+
+            <div id="studentList"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Record Manager | LF 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
